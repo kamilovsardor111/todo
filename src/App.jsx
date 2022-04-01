@@ -11,9 +11,10 @@ function App() {
       setTheme('light')
     }
   }
-
-444444444444---------------------------------------------------------------------------------------
-
+                                
+ useEffect(() => {
+   document.documentElement.setAttribute('data-theme', theme)
+ }, [theme])
 
   return (
     <div className="App">
